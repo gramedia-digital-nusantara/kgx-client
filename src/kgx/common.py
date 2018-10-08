@@ -1,5 +1,7 @@
 from enum import Enum
 
+__all__ = ['PickupType', ]
+
 
 class PickupType(Enum):
     """ Indicates one of 3 types of pickup allowed for scheduling by KGX.

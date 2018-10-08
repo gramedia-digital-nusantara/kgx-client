@@ -4,6 +4,7 @@ from enum import IntEnum
 
 from .common import PickupType
 
+__all__ = ['CheckRateRequest', ]
 
 class CancelDeliveryRequest:
     """ Cancels a delivery.
