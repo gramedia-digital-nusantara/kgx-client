@@ -1,3 +1,6 @@
+# KG Express Client
+
+[![Build Status](https://gramediadigital.visualstudio.com/Operations/_apis/build/status/kgx-client-Jenkins-CI)](https://gramediadigital.visualstudio.com/Operations/_build/latest?definitionId=74)
 
 
 Django-Oscar Settings
