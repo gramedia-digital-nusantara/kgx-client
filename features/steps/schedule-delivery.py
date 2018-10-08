@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, timezone
 from unittest.mock import MagicMock
 
 from behave import given, then, when
@@ -66,7 +66,7 @@ def step_impl(context: Context):
         merchant_id='MRCHNT-123',
         paid_by_parent=False,
         is_cod=False,
-        pickup_time=datetime(year=2016, month=10, day=2, hour=17),
+        pickup_time=datetime(year=2016, month=10, day=2, hour=10, tzinfo=timezone.utc),
         pickup_type=PickupType.next_day_service,
         destination_comments='Call 123 if nobody is in.'
     )
@@ -127,7 +127,7 @@ def step_impl(context):
             merchant_id='MRCHNT-123',
             paid_by_parent=False,
             is_cod=False,
-            pickup_time=datetime(year=2016, month=10, day=2, hour=17),
+            pickup_time=datetime(year=2016, month=10, day=2, hour=10, tzinfo=timezone.utc),
             pickup_type=PickupType.next_day_service,
             destination_comments='Call 123 if nobody is in.'
         )
