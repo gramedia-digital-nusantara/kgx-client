@@ -4,3 +4,4 @@ requests==2.20.0
 # dev deps
 behave==1.2.6
 django-oscar==1.6.4
+urllib3>=1.26.5 # not directly required, pinned by Snyk to avoid a vulnerability
